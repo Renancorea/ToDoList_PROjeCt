@@ -1,0 +1,205 @@
+:root{
+
+  --corprimaria: #7063F0;
+  --corsecundaria :#E4E1FF; 
+  --cortercearia: #F3F2FF;
+  --corsinsa: #2D2D2D;
+  --corsinsamiasclaro: #555555;
+  --verde-color: #02AF75;
+	--branco-color: #E4FFF6;
+}
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--cortercearia);
+  color: var(--corsinsa);
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cortercearia);
+  color: var(--corprimaria);
+  border-bottom: 1px solid var(--corsecundaria);
+  height: 60px;
+}
+
+.titulo{
+  color: var(--corprimaria);
+  margin-left: 15%;
+  font-size: 24px;
+}
+
+.subtitulo{
+  font-size: 18px;
+  color: var(--corsinsa);
+  margin-right: 15%;
+}
+
+.container {
+  width: 70%;
+  align-items: center;
+  border-radius: 18px;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.add-tarefa {
+  color: var(--corsinsa);
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--corsecundaria);
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px ;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid var(--corprimaria);
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  background-color: var(--corsecundaria);
+}
+
+.input-area button {
+  background-color: var(--corprimaria);
+  color: var(--branco-color);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input-area button:hover {
+  background-color: var(--corprimaria);
+}
+
+.lista-tarefa {
+  margin-top: 30px;
+}
+
+.tarefa-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+
+.contadorVerde {
+  color: var(--verde-color);
+  font-weight: bold;
+}
+.contador {
+  margin-left: auto;
+  color: var(--corsinsa);
+}
+.descricao {
+  color: var(--corsinsa);
+  margin-bottom: 5%;
+  font-size: 18px;
+}
+
+.lista-tarefa {
+  margin-top: 10px;
+}
+
+.tarefa-item{
+  height: 80px;
+  display: flex;
+  border-radius: 12px;
+  background-color: var(--corsecundaria);
+  border: 1px solid var(--corprimaria);
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+.tarefa-itemconcluida{
+  height: 80px;
+  display: flex;
+  border-radius: 12px;
+  background-color: var(--branco-color);
+  border: 1px solid var(--verde-color);
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inputbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--verde-color);
+  cursor: pointer;
+}
+
+.tarefa-inteira{
+  display: flex;
+  flex-direction: column;
+}
+
+.nomeTarefa {
+  color: var(--corprimaria);
+  font-weight: 600;
+  font-size: 16px;
+  flex-direction: column;
+}
+.nomeTarefaconcluida {
+  color: var(--verde-color);
+  font-weight: 600;
+  font-size: 16px;
+  flex-direction: column;
+  
+}
+.dataTarefa {
+  font-size: 13px;
+  color: var(--corsinsamiasclaro);
+  margin-top: 3px;
+}
+
+.lixeira {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: auto;
+  padding: 5px;
+}
+
+.final{
+  text-align: center;
+  margin-top: 10%;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
