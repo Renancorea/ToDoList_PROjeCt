@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ToDoList Home</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<p class="bigText">ToDoList</p>
+			<p class="normalText"> <strong id="saudacao" class="saudacao"></strong> <strong>Renan Correia :)</strong></p>
+		</div>
+	</header>
+
+	<main>
+		<form id="form">
+			<div class="formSection">
+				<p class="formText">Adicionar tarefas</p>
+				<input class="inputTask" type="text" placeholder="Nome da tarefa" required>
+				<button class="btnAdd" type="submit">Adicionar</button>
+			</div>
+		</form>
+
+		<div class="tasksSection" id="tasksSection">
+			<p class="sectionTitle">Minhas tarefas</p>
+			<div class="textSection">
+				<p class="sectionSubtitle">Veja todas as suas tarefas criadas na plataforma</p>
+				<p id="progressText" class="progressText"></p>
+			</div>
+				<div class="taskList" id="taskList">
+
+					<div class="taskItem">
+						<div class="boxCheck">
+							<input type="checkbox" class="checkboxTask">
+						</div>
+						<div class="taskText">
+							<p class="taskName">renan</p>
+							<p class="taskDate">Criado em: 25 de Out de 2025</p>
+						</div>
+                        
+						<button class="btnTrash" type="submit"><img src="files/trash.png" alt="Excluir"></button></div>
+				</div>
+		</div>
+	</main>
+
+	<script src="script/script.js"></script>
+</body>
+</html>
